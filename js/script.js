@@ -11,6 +11,37 @@ function initMap() {
         map: map,
         title: "Millennium Park, Chicago",
     });
+
+    const markers = [
+        {
+            position: { lat: 41.8917, lng: -87.6086 },
+            title: "Navy Pier",
+        },
+        {
+            position: { lat: 41.8789, lng: -87.6359 },
+            title: "Willis Tower",
+        },
+        {
+            position: { lat: 41.8807, lng: -87.6243 },
+            title: "The Art Institute of Chicago",
+        },
+        {
+            position: { lat: 41.8902, lng: -87.6267 },
+            title: "Chicago Riverwalk",
+        },
+        {
+            position: { lat: 41.8826, lng: -87.6195 },
+            title: "Maggie Daley Park",
+        },
+    ];
+
+    markers.forEach((markerData) => {
+        new google.maps.Marker({
+            position: markerData.position,
+            map: map,
+            title: markerData.title,
+        });
+    });
 }
 
 $(document).ready(function () {

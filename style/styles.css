@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
     background-color: #ffffff;
     color: #333;
@@ -10,24 +8,25 @@ body {
 }
 
 header {
-    margin-bottom: 2em;
-    padding: 1em 0;
+    margin-bottom: 1.5em;
+    padding: 0.5em 0;
 }
 
 h1 {
     color: #2C3E50;
-    margin-top: 1em;
-    font-size: 2em;
+    margin-top: 0.5em;
+    font-size: 1.8em;
 }
 
 h2, h3 {
     color: #555;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    font-size: 1.5em;
 }
 
 p {
-    line-height: 1.6;
-    margin: 1em 0;
+    line-height: 1.5;
+    margin: 0.8em 0;
 }
 
 nav {
@@ -45,7 +44,7 @@ ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 ul li {
@@ -64,8 +63,8 @@ a:hover {
 }
 
 section {
-    max-width: 800px;
-    margin: 2em auto;
+    max-width: 700px;
+    margin: 1.5em auto;
     padding: 1em;
 }
 
@@ -73,17 +72,20 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
     gap: 1em;
+    padding: 0.8em 0;
+    max-width: 700px;
+    margin: 1em auto;
 }
 
 .slider img {
     display: none;
-    max-width: 100%;
+    width: 100%;
+    max-width: 350px;
     height: auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .slider img:first-of-type {
@@ -92,49 +94,48 @@ section {
 
 #map {
     width: 100%;
-    height: 400px;
-    margin: 2em 0;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin: 1.5em 0 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
     body {
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.4;
         padding: 0 1em;
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 1em;
+        gap: 0.8em;
     }
 
     #map {
-		width: 100%;
-        height: 250px;
+        height: 200px;
         margin: 1em 0;
     }
 
     .slider img {
         max-width: 100%;
-        border-radius: 5px;
+        border-radius: 4px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
     body {
-        font-size: 16px;
-        line-height: 1.7;
+        font-size: 15px;
+        line-height: 1.6;
         padding: 0 2em;
     }
 
@@ -143,24 +144,23 @@ section {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
 
     #map {
-		width: 100%;
-        height: 350px;
+        height: 250px;
     }
 
     .slider img {
         max-width: 90%;
-        border-radius: 10px;
+        border-radius: 6px;
     }
 
     section {
-        padding: 1.5em;
+        padding: 1.2em;
     }
 }
