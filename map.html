@@ -1,85 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Google Maps API</title>
+    <title>Explore Millennium Park, Chicago</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
   </head>
-  <body id="chickenapi">
+  <body id="chicagoapi">
     <section class="gmaps">
       <header>
         <nav>
-        <ul>
-          <li><a href="index.html">Intro</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="map.html">Google Maps API</a></li>
-        </ul>
+          <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="map.html">Google Maps API</a></li>
+          </ul>
         </nav>
       </header>
     </section>
-<div>
+    <div>
       <div id="map"></div>
-      <h2 class="chicken">Chicken, Alaska</h2>
+      <h2 class="location-title">Explore Millennium Park, Chicago</h2>
+
       <div class="slider-container">
         <div class="slide active">
-         <img src="images/chicken1.jpg" alt="chicken in front of grass">
+          <img src="images/fase.jpg" alt="famous face fountain in the middle of millenium park. an interactive work of art">
         </div>
         <div class="slide">
-         <img src="images/chicken2.webp" alt="raw chicken on man's head">
+          <img src="images/flowe.jpg" alt="amazing flowerbeds beside seats in the concrete pathways inside the park">
         </div>
         <div class="slide">
-         <img src="images/chicken3.jpg" alt="steaming cooked chicken">
+          <img src="images/parko.jpg" alt="beautiful sidewalks and buildings near the outskirts of the park">
         </div>
         <button class="prev">❮</button>
         <button class="next">❯</button>
         <div class="dots">
-         <div class="dot active-dot"></div>
-         <div class="dot"></div>
-         <div class="dot"></div>
+          <div class="dot active-dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
       </div>
-      <script>
-      $(document).ready(function () {
-         let slideCount = $('.slide').length;
-         let currentIndex = 0;
-         $('.slide').hide();
-         $('.active').show();
-         $('.prev').on('click', function () {
-            currentIndex--;
-            if (currentIndex < 0) {
-               currentIndex = slideCount - 1;
-            }
-            showSlide(currentIndex);
-         });
-         $('.next').on('click', function () {
-            currentIndex++;
-            if (currentIndex >= slideCount) {
-               currentIndex = 0;
-            }
-            showSlide(currentIndex);
-         });
-         $('.dot').on('click', function () {
-            currentIndex = $(this).index();
-            showSlide(currentIndex);
-         });
-         function showSlide(index) {
-            $('.slide').hide().removeClass('active');
-            $('.dot').removeClass('active-dot');
-            $('.slide').eq(index).show().addClass('active');
-            $('.dot').eq(index).addClass('active-dot');
-         }
-         showSlide(currentIndex);
-      });
-    </script>
-    <h2 class="chicken">Chicken</h2>
     </div>
   </body>
 </html>
