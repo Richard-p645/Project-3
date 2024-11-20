@@ -100,7 +100,6 @@ img {
 .park-img {
     max-width: 350px;
 }
-}
 
 #map {
     width: 100%;
@@ -208,6 +207,7 @@ button.next {
     }
 
     #map {
+		width: 500px;
         height: 250px;
     }
 
